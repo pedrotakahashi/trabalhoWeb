@@ -1,0 +1,11 @@
+{
+    "products": [
+      {
+        "title": "GTA V",
+        "image": "https://www.rockstargames.com/V/img/global/order/mobile-cover.jpg",
+        "price": 299.99,
+        "category": ["Ação", "Aventura"]
+      }
+
+    ]
+}
