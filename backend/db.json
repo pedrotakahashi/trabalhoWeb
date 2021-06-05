@@ -1,34 +1,167 @@
 {
-  "users": [
+  "games": [
     {
       "id": 1,
-      "name": "Pedro Takahashi",
-      "email": "email@email.com"
+      "name": "Resident Evil 1",
+      "categoria": "ação",
+      "preco": 25.00
     },
     {
       "id": 2,
-      "name": "Pedro Henrique",
-      "email": "email2@email.com"
-    }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "titulo": "post 1",
-      "desc": "Descrição do post 1",
-      "comentario": ""
-    },
-    {
-      "id": 2,
-      "titulo": "post 2",
-      "desc": "Descrição do post 1",
-      "comentario": ""
+      "name": "Resident Evil 2",
+      "categoria": "ação",
+      "preco": 25.00
     },
     {
       "id": 3,
-      "titulo": "post 3",
-      "desc": "Descrição do post 3",
-      "comentario": ""
+      "name": "Resident Evil 3",
+      "categoria": "ação",
+      "preco": 25.00
+    },
+    {
+      "id": 4,
+      "name": "Resident Evil 4",
+      "categoria": "ação",
+      "preco": 25.00
+    },
+    {
+      "id": 5,
+      "name": "Resident Evil 5",
+      "categoria": "ação",
+      "preco": 25.00
+    },
+    {
+      "id": 6,
+      "name": "Breath of Fire 1",
+      "categoria": "rpg",
+      "preco": 25.00
+    },
+    {
+      "id": 7,
+      "name": "Breath of Fire 2",
+      "categoria": "rpg",
+      "preco": 25.00
+    },
+    {
+      "id": 8,
+      "name": "Breath of Fire 3",
+      "categoria": "rpg",
+      "preco": 25.00
+    },
+    {
+      "id": 9,
+      "name": "Breath of Fire 4",
+      "categoria": "rpg",
+      "preco": 25.00
+    },
+    {
+      "id": 10,
+      "name": "Brave Fencer Musashi",
+      "categoria": "rpg",
+      "preco": 25.00
+    },
+    {
+      "id": 11,
+      "name": "Need for Speed 1",
+      "categoria": "corrida",
+      "preco": 25.00
+    },
+    {
+      "id": 12,
+      "name": "Need for Speed 2",
+      "categoria": "corrida",
+      "preco": 25.00
+    },
+    {
+      "id": 13,
+      "name": "Need for Speed 3 ",
+      "categoria": "corrida",
+      "preco": 25.00
+    },
+    {
+      "id": 14,
+      "name": "Need for Speed Underground 1",
+      "categoria": "corrida",
+      "preco": 35.00
+    },
+    {
+      "id": 15,
+      "name": "Need for Speed Underground 2",
+      "categoria": "ação",
+      "preco": 35.00
+    },
+    {
+      "id": 16,
+      "name": "Harvest Moon back to Nature ",
+      "categoria": "Simulador de vida",
+      "preco": 25.00
+    },
+    {
+      "id": 17,
+      "name": "The Sims 2",
+      "categoria": "Simulador de vida",
+      "preco": 25.00
+    },
+    {
+      "id": 18,
+      "name": "Hoshigami",
+      "categoria": "Estrategia",
+      "preco": 25.00
+    },
+    {
+      "id": 19,
+      "name": "Age of Empires 2",
+      "categoria": "Estrategia",
+      "preco": 25.00
+    },
+    {
+      "id": 20,
+      "name": "Medal of Honor ",
+      "categoria": "FPS",
+      "preco": 25.00
+    },
+    {
+      "id": 21,
+      "name": "Medal of Honor airbone",
+      "categoria": "FPS",
+      "preco": 25.00
+    },
+    {
+      "id": 22,
+      "name": "Parasite Eve",
+      "categoria": "Terror",
+      "preco": 25.00
+    },
+    {
+      "id": 23,
+      "name": "Fatal Frame 1",
+      "categoria": "Terror",
+      "preco": 25.00
+    },
+    {
+      "id": 24,
+      "name": "Fatal Frame 2",
+      "categoria": "Terror",
+      "preco": 25.00
+    },
+    {
+      "id": 25,
+      "name": "Pokemon Fire Red",
+      "categoria": "rpg",
+      "preco": 45.00
+    }
+
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nome": "Rodrigo Lenovo",
+      "email": "b490@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Alberto  Samsung",
+      "email": "alberto-samsungexperience@gmail.com"
     }
   ],
   "image": [
