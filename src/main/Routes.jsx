@@ -12,6 +12,7 @@ export default props =>
         <Route exact path ="/" component={Home}/>
         <Route  path ="/desafio1" component={Desafio1}/>
         <Route  path ="/desafio2" component={Desafio2}/>
+        <Route path=""/> 
         
         <Redirect from='*' to='/' />
     </Switch>
