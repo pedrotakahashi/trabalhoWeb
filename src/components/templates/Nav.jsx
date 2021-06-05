@@ -5,17 +5,21 @@ import React from 'react'
 export default props =>
     <aside className = "menu-area">
         <nav className="menu">
-            <a href="#/">
-                <i className="fa fa-home"></i> Todos
+            <a href="#/" style={{fontFamily: "Helvetica", fontWeight: "600"}}>
+                TODOS
                
             </a>
 
-            <a href="#/categoria1">
-            <i className="fa fa-users"></i> Categoria 1
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao">
+            AÇÃO
             </a>
 
-            <a href="#/categoria2">
-            <i className="fa fa-users"></i> Categoria 2
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/aventura">
+            AVENTURA
+            </a>
+            <hr></hr>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/carrinho">
+            CARRINHO
             </a>
           
         </nav>
