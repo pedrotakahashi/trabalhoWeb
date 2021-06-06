@@ -15,9 +15,23 @@ export default function Nav (props){
                 TODOS
                
             </a>
-
             <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("Ação")}>
             AÇÃO
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("RPG")}>
+            RPG
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("Simulador")}>
+            SIMULADOR
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("Estratégia")}>
+            ESTRATÉGIA
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("FPS")}>
+            FPS
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("Terror")}>
+            TERROR
             </a>
 
             <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/corrida" onClick={() => setContexto("Corrida")}>

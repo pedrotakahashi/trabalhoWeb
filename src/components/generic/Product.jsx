@@ -28,6 +28,83 @@ export default function Product(props){
             })
             setProductsShow(aux);
         }
+        else if(contexto == "Corrida")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "Corrida")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
+        // <Route  path ="/rpg" component={Home}/>
+        //     <Route  path ="/simulador" component={Home}/>
+        //     <Route  path ="/estrategia" component={Home}/>
+        //     <Route  path ="/fps" component={Home}/>
+        //     <Route  path ="/terror" component={Home}/>
+        else if(contexto == "RPG")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "RPG")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
+        else if(contexto == "Simulador")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "Simulador")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
+        else if(contexto == "Estratégia")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "Estratégia")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
+        else if(contexto == "FPS")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "FPS")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
+        else if(contexto == "Terror")
+        {
+            ProductList.products.map(item =>{
+                item.category.map(category =>{
+                    if(category == "Terror")
+                    {
+                        aux.push(item);
+                    }
+                })
+            })
+            setProductsShow(aux);
+        }
         else{
             setProductsShow(ProductList.products);
         }

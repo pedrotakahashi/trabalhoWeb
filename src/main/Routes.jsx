@@ -13,7 +13,12 @@ export default props =>
     <Switch>
         <Route exact path ="/" component={Home}/>
         <Route  path ="/acao" component={Home}/>
-        <Route  path ="/corrida" component={Desafio2}/>
+        <Route  path ="/corrida" component={Home}/>
+        <Route  path ="/rpg" component={Home}/>
+        <Route  path ="/simulador" component={Home}/>
+        <Route  path ="/estrategia" component={Home}/>
+        <Route  path ="/fps" component={Home}/>
+        <Route  path ="/terror" component={Home}/>
         <Route  path ="/carrinho" component={Carrinho}/>
         <Route path=""/> 
         
