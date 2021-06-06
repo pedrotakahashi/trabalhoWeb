@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "products": [
     {
@@ -170,4 +171,178 @@
       "url": "../src/components/assets/images/logo.png"
     }
   ]
+=======
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Resident Evil 1",
+      "category": ["ação"],
+      "price": 25.00
+    },
+    {
+      "id": 2,
+      "title": "Resident Evil 2",
+      "category": ["ação"],
+      "price": 25.00
+    },
+    {
+      "id": 3,
+      "title": "Resident Evil 3",
+      "category": ["ação"],
+      "price": 25.00
+    },
+    {
+      "id": 4,
+      "title": "Resident Evil 4",
+      "category": ["ação"],
+      "price": 25.00
+    },
+    {
+      "id": 5,
+      "title": "Resident Evil 5",
+      "category": ["ação"],
+      "price": 25.00
+    },
+    {
+      "id": 6,
+      "title": "Breath of Fire 1",
+      "category": ["rpg"],
+      "price": 25.00
+    },
+    {
+      "id": 7,
+      "title": "Breath of Fire 2",
+      "category": ["rpg"],
+      "price": 25.00
+    },
+    {
+      "id": 8,
+      "title": "Breath of Fire 3",
+      "category": ["rpg"],
+      "price": 25.00
+    },
+    {
+      "id": 9,
+      "title": "Breath of Fire 4",
+      "category": ["rpg"],
+      "price": 25.00
+    },
+    {
+      "id": 10,
+      "title": "Brave Fencer Musashi",
+      "category": ["rpg"],
+      "price": 25.00
+    },
+    {
+      "id": 11,
+      "title": "Need for Speed 1",
+      "category": ["corrida"],
+      "price": 25.00
+    },
+    {
+      "id": 12,
+      "title": "Need for Speed 2",
+      "category": ["corrida"],
+      "price": 25.00
+    },
+    {
+      "id": 13,
+      "title": "Need for Speed 3 ",
+      "category": ["corrida"],
+      "price": 25.00
+    },
+    {
+      "id": 14,
+      "title": "Need for Speed Underground 1",
+      "category": ["corrida"],
+      "price": 35.00
+    },
+    {
+      "id": 15,
+      "title": "Need for Speed Underground 2",
+      "category": ["ação"],
+      "price": 35.00
+    },
+    {
+      "id": 16,
+      "title": "Harvest Moon back to Nature ",
+      "category": ["Simulador de vida"],
+      "price": 25.00
+    },
+    {
+      "id": 17,
+      "title": "The Sims 2",
+      "category": ["Simulador de vida"],
+      "price": 25.00
+    },
+    {
+      "id": 18,
+      "title": "Hoshigami",
+      "category": ["Estrategia"],
+      "price": 25.00
+    },
+    {
+      "id": 19,
+      "title": "Age of Empires 2",
+      "category": ["Estrategia"],
+      "price": 25.00
+    },
+    {
+      "id": 20,
+      "title": "Medal of Honor ",
+      "category": ["FPS"],
+      "price": 25.00
+    },
+    {
+      "id": 21,
+      "title": "Medal of Honor airbone",
+      "category": ["FPS"],
+      "price": 25.00
+    },
+    {
+      "id": 22,
+      "title": "Parasite Eve",
+      "category": ["Terror"],
+      "price": 25.00
+    },
+    {
+      "id": 23,
+      "title": "Fatal Frame 1",
+      "category": ["Terror"],
+      "price": 25.00
+    },
+    {
+      "id": 24,
+      "title": "Fatal Frame 2",
+      "category": ["Terror"],
+      "price": 25.00
+    },
+    {
+      "id": 25,
+      "title": "Pokemon Fire Red",
+      "category": ["rpg"],
+      "price": 45.00
+    }
+
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nome": "Rodrigo Lenovo",
+      "email": "b490@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Alberto  Samsung",
+      "email": "alberto-samsungexperience@gmail.com"
+    }
+  ],
+  "image": [
+    {
+      "id": 1,
+      "url": "../src/components/assets/images/logo.png"
+    }
+  ]
+>>>>>>> ee429e060af9de00455dc331e11d767a15ac9cbf
 }
