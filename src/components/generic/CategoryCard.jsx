@@ -14,14 +14,27 @@ export default function Product(props){
         case "Ação":
             color = "#EF6461"
             break;
-        case "Aventura":
+        case "Estratégia":
             color = "#EDAE49"
             break;
         case "Corrida":
             color = "#30638E"
             break;
+        case "RPG":
+            color = "#00798C"
+            break;
+        case "Terror":
+            color = "red"
+            break;
+        case "FPS":
+            color = "#531CB3"
+            break;
+        case "Simulador":
+            color = "#251605"
+            break;
+        
         default: 
-            color = "red";
+            color = "blue";
             break;
             
         

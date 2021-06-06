@@ -1,27 +1,36 @@
 import "./Nav.css"
 
-import React from 'react'
+import React, {useContext} from 'react'
+import Master from '../generic/Master'
+import {Context} from '../Contexts/Context'
 
-export default props =>
-    <aside className = "menu-area">
+export default function Nav (props){
+    const master = Master.getInstance();
+    const {contexto, setContexto} = useContext(Context);
+    return(
+        <aside className = "menu-area">
+        
         <nav className="menu">
-            <a href="#/" style={{fontFamily: "Helvetica", fontWeight: "600"}}>
+            <a href="#/" style={{fontFamily: "Helvetica", fontWeight: "600"}} onClick={() => setContexto("Home")}>
                 TODOS
                
             </a>
 
-            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao">
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/acao" onClick={() => setContexto("Ação")}>
             AÇÃO
             </a>
 
-            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/aventura">
-            AVENTURA
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/corrida" onClick={() => setContexto("Corrida")}>
+            CORRIDA
             </a>
             <hr></hr>
-            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/carrinho">
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/carrinho" onClick={() => setContexto("Carrinho")}>
             CARRINHO
             </a>
           
         </nav>
         
     </aside>
+    )
+}
+    

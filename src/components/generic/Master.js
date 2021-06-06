@@ -13,6 +13,17 @@ export default class Master{
 
     constructor(){
         this.itensCarrinho = [];
+        this.context = "Home";
+    }
+
+    setContext(context)
+    {
+        this.context = context;
+    }
+
+    getCurrentContext()
+    {
+        return this.context;
     }
 
     setItensCarrinho(array){
