@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Col, Row, Button, Table } from 'reactstrap'
 import ProductList from '../data/products.json'
 import Currency from 'currency.js'
@@ -9,11 +9,18 @@ export default function Carrinho(props){
 
     const master = Master.getInstance();
     const carrinho = master.getCarrinho();
-
-    const {contexto, setContexto, itemArray, setItemArray} = useContext(Context);
+        let aux = 0;
+    
+    const {contexto, setContexto, itemArray, setItemArray, total} = useContext(Context);
+    
 
     useEffect(() =>{
         console.log("itemarray: ", itemArray)
+        // itemArray.map(item =>{
+        //     aux++;
+        // })
+        // setPrecoTotal(aux);
+
     }, [itemArray])
     return(
         <>
@@ -37,25 +44,6 @@ export default function Carrinho(props){
                     </tr>
                 </thead>
                 <tbody>
-                    {/* <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    </tr> */}
-
                     {itemArray.map(item => (
                         <>
                             <tr>
@@ -76,6 +64,11 @@ export default function Carrinho(props){
 
                 </tbody>
             </Table>
+            <Row className="ml-5 text-center" style={{backgroundColor: "white"}}>
+            <Col lg="3">
+             <h3>TOTAL: {Currency(total, { separator: ' ' }).format()}</h3>
+            </Col>
+        </Row>
         </Row>
         
         </>

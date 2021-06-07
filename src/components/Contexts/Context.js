@@ -6,12 +6,15 @@ export default function ContextProvider({ children }) {
     
     const [contexto, setContexto] = useState("Home");
     const [itemArray, setItemArray] = useState([]);
+    const [total, setTotal] = useState(0);
     
     const state = {
         contexto, 
         setContexto,
         itemArray, 
-        setItemArray
+        setItemArray,
+        total, 
+        setTotal
         
     }
 
