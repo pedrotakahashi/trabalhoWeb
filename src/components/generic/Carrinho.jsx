@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import { Col, Row, Button, Table } from 'reactstrap'
 import ProductList from '../data/products.json'
 import Currency from 'currency.js'
 import CategoryCard from '../generic/CategoryCard'
+import {Context} from '../Contexts/Context'
+import Master from '../generic/Master'
 export default function Carrinho(props){
 
+    const master = Master.getInstance();
+    const carrinho = master.getCarrinho();
+
+    const {contexto, setContexto, itemArray, setItemArray} = useContext(Context);
+
+    useEffect(() =>{
+        console.log("itemarray: ", itemArray)
+    }, [itemArray])
     return(
         <>
 
@@ -19,14 +29,15 @@ export default function Carrinho(props){
             <Table dark>
                 <thead>
                     <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Imagem</th>
+                    <th>Preço</th>
+                    <th>Categorias</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    {/* <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
@@ -43,7 +54,26 @@ export default function Carrinho(props){
                     <td>Larry</td>
                     <td>the Bird</td>
                     <td>@twitter</td>
-                    </tr>
+                    </tr> */}
+
+                    {itemArray.map(item => (
+                        <>
+                            <tr>
+                                <td>{item.id}</td>{/*id*/ }
+                                <td>{item.title}</td>{/*titulo*/ }
+                                <td><img src={item.image} style={{height:"100px", width: "100px"}}></img></td>{/*imagem*/ }
+                                <td><h6>{Currency(item.price, { separator: ' ' }).format()}</h6></td>
+                                <td>
+                                {item.category.map(category =>(
+                                    <h5>
+                                        {category}
+                                    </h5>
+                                ))}
+                                </td>
+                            </tr>
+                        </>
+                    ))}
+
                 </tbody>
             </Table>
         </Row>
