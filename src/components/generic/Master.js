@@ -32,6 +32,9 @@ export default class Master{
     setItemCarrinho(item){
         this.itensCarrinho.push(item);
     }
+    getCarrinho(){
+        return this.itensCarrinho;
+    }
     deleteItemCarrinho(id)
     {
         // nao foi escrito ainda

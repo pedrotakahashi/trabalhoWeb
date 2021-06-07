@@ -1,10 +1,27 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Col, Row, Button, Table } from 'reactstrap'
 import ProductList from '../data/products.json'
 import Currency from 'currency.js'
 import CategoryCard from '../generic/CategoryCard'
+import {Context} from '../Contexts/Context'
+import Master from '../generic/Master'
 export default function Carrinho(props){
 
+    const master = Master.getInstance();
+    const carrinho = master.getCarrinho();
+        let aux = 0;
+    
+    const {contexto, setContexto, itemArray, setItemArray, total} = useContext(Context);
+    
+
+    useEffect(() =>{
+        console.log("itemarray: ", itemArray)
+        // itemArray.map(item =>{
+        //     aux++;
+        // })
+        // setPrecoTotal(aux);
+
+    }, [itemArray])
     return(
         <>
 
@@ -19,33 +36,39 @@ export default function Carrinho(props){
             <Table dark>
                 <thead>
                     <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Imagem</th>
+                    <th>Preço</th>
+                    <th>Categorias</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
+                    {itemArray.map(item => (
+                        <>
+                            <tr>
+                                <td>{item.id}</td>{/*id*/ }
+                                <td>{item.title}</td>{/*titulo*/ }
+                                <td><img src={item.image} style={{height:"100px", width: "100px"}}></img></td>{/*imagem*/ }
+                                <td><h6>{Currency(item.price, { separator: ' ' }).format()}</h6></td>
+                                <td>
+                                {item.category.map(category =>(
+                                    <h5>
+                                        {category}
+                                    </h5>
+                                ))}
+                                </td>
+                            </tr>
+                        </>
+                    ))}
+
                 </tbody>
             </Table>
+            <Row className="ml-5 text-center" style={{backgroundColor: "white"}}>
+            <Col lg="3">
+             <h3>TOTAL: {Currency(total, { separator: ' ' }).format()}</h3>
+            </Col>
+        </Row>
         </Row>
         
         </>

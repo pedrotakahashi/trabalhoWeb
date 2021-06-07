@@ -12,10 +12,12 @@ export default function Product(props){
     const master = Master.getInstance();
     const [productsShow, setProductsShow] = useState([]);
     let aux = [];
-    const {contexto, setContexto} = useContext(Context);
+    const {contexto, setContexto, itemArray, setItemArray, total, setTotal} = useContext(Context);
+    let auxItems = itemArray;
 
     useEffect(() =>{
         console.log("contexto: ",contexto)
+        
         if(contexto == "Ação")
         {
             ProductList.products.map(item =>{
@@ -128,7 +130,7 @@ export default function Product(props){
                         ))}
                     </Row>
                     
-                    <Button color="success" >Comprar</Button>
+                    <Button color="success" onClick={() => {auxItems.push(item); setItemArray(auxItems); setTotal(total + item.price) }} >Comprar</Button>
                 </Col>
                 </>
             ))} 
