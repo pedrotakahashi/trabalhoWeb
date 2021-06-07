@@ -4,8 +4,8 @@ import Carrinho from '../components/generic/Carrinho';
 import Table from '../components/generic/Table';
 
 import Home from'../components/home/Home';
-import Desafio1 from '../components/user/Desafio1';
-import Desafio2 from '../components/user/Desafio2';
+import Cadastro from '../components/user/Cadastro';
+
 
 
 
@@ -20,6 +20,7 @@ export default props =>
         <Route  path ="/fps" component={Home}/>
         <Route  path ="/terror" component={Home}/>
         <Route  path ="/carrinho" component={Carrinho}/>
+        <Route  path ="/cadastro" component={Cadastro}/>
         <Route path=""/> 
         
         <Redirect from='*' to='/' />
