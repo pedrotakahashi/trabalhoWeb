@@ -41,6 +41,9 @@ export default function Nav (props){
             <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/carrinho" onClick={() => setContexto("Carrinho")}>
             CARRINHO
             </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/cadastro" onClick={() => setContexto("Cadastro")}>
+            CADASTRO
+            </a>
           
         </nav>
         

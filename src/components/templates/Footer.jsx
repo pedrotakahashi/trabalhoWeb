@@ -6,7 +6,6 @@ export default props =>
     <footer className="footer">
         <span>
             Desenvolvido  por
-            <strong> Guilherme de Aguiar Pacianotto,</strong>
-            <strong> Pedro Takahashi</strong>
+          <strong> Equipe Games Plus Ultra</strong>
         </span>
     </footer>
