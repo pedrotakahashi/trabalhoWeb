@@ -7,6 +7,9 @@ export default function ContextProvider({ children }) {
     const [contexto, setContexto] = useState("Home");
     const [itemArray, setItemArray] = useState([]);
     const [total, setTotal] = useState(0);
+    const [idPedidos, setIdPedidos] = useState(0);
+    const [entrega, setEntrega] = useState({});
+    const [pedidos, setPedidos] = useState([]);
     
     const state = {
         contexto, 
@@ -14,7 +17,13 @@ export default function ContextProvider({ children }) {
         itemArray, 
         setItemArray,
         total, 
-        setTotal
+        setTotal,
+        entrega, 
+        setEntrega,
+        pedidos, 
+        setPedidos,
+        idPedidos, 
+        setIdPedidos
         
     }
 

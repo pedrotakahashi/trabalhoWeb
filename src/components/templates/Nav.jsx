@@ -42,7 +42,10 @@ export default function Nav (props){
             CARRINHO
             </a>
             <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/cadastro" onClick={() => setContexto("Cadastro")}>
-            CADASTRO
+            ENDERECO
+            </a>
+            <a style={{fontFamily: "Helvetica", fontWeight: "600"}} href="#/pedidos" onClick={() => setContexto("Pedidos")}>
+            PEDIDOS
             </a>
           
         </nav>
