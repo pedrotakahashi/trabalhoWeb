@@ -1,6 +1,8 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router';
 import Carrinho from '../components/generic/Carrinho';
+import Endereco from '../components/generic/Endereco'
+import Pedidos from '../components/generic/Pedidos';
 import Table from '../components/generic/Table';
 
 import Home from'../components/home/Home';
@@ -20,7 +22,8 @@ export default props =>
         <Route  path ="/fps" component={Home}/>
         <Route  path ="/terror" component={Home}/>
         <Route  path ="/carrinho" component={Carrinho}/>
-        <Route  path ="/cadastro" component={Cadastro}/>
+        <Route  path ="/cadastro" component={Endereco}/>
+        <Route  path ="/pedidos" component={Pedidos}/>
         <Route path=""/> 
         
         <Redirect from='*' to='/' />

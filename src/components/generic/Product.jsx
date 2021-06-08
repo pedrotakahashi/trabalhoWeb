@@ -114,7 +114,9 @@ export default function Product(props){
 
     
     return (<>
-        <Row className="text-center m-3" style={{backgroundColor: "white"}}>
+        <Row className="text-center m-3 " style={{backgroundColor: "white"}}>
+
+            
             {productsShow.map(item =>(
                 <>
             
