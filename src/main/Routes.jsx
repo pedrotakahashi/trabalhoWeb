@@ -6,10 +6,6 @@ import Pedidos from '../components/generic/Pedidos';
 import Table from '../components/generic/Table';
 
 import Home from'../components/home/Home';
-import Cadastro from '../components/user/Cadastro';
-
-
-
 
 export default props =>
     <Switch>

@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Main from '../templates/Main'
-import firebase from 'firebase/app';
-import firebaseconfig from '../../data/firebaseconfig'
-import 'firebase/database';
-import 'firebase/auth';
-import 'firebase/firestore';
 
 const headerProps ={
     icon: 'users',
@@ -14,10 +9,6 @@ const headerProps ={
 }
 
 const baseUrl = 'http://localhost:3001/users'
-const initialState ={
-    user:{name:'', email: ''},
-    list:[]
-}
 
 export default class UserCrud extends Component {
     state = {...initialState}
