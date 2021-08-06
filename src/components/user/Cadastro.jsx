@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Main from '../templates/Main'
+import firebase from 'firebase/app';
+import firebaseconfig from '../../data/firebaseconfig'
+import 'firebase/database';
+import 'firebase/auth';
+import 'firebase/firestore';
 
 const headerProps ={
     icon: 'users',
@@ -13,8 +18,6 @@ const initialState ={
     user:{name:'', email: ''},
     list:[]
 }
-
-
 
 export default class UserCrud extends Component {
     state = {...initialState}
@@ -35,18 +38,8 @@ export default class UserCrud extends Component {
     }
 
     save(){
-        const user = this.state.user
-        const method = user.id ? 'put' : 'post'
-        const url = user.id ? `${baseUrl}/${user.id}`: baseUrl
-        axios[method](url,user)
-        .then (resp =>{
-            const list = this.getUpdateList(resp.data)
-            this.setState({user: initialState.user, list})
-
-        })
+        firebase.firestore().collection("usuarios").add({name:this.initialState.name, email:this.initialState.email})
     }
-
-   
 
     updateField(event) {
         const user = {...this.state.user}

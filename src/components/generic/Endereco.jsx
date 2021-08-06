@@ -101,9 +101,6 @@ export default function Endereco(props){
                                     obj.adress = endereco;
                                     obj.placement = bairro;
                                     obj.zipCode = cep;
-        
-                                    
-        
                                     setEntrega(obj);
                                 }
                             else{
