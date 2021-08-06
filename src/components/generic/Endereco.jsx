@@ -89,11 +89,11 @@ export default function Endereco(props){
                     <button className="btn btn-primary"
                         onClick={e=>{
 
-                            if(obj.name &&
-                                obj.mail &&
-                                obj.adress &&
-                                obj.placement &&
-                                obj.zipCode
+                            if(nome != "" &&
+                                email != "" &&
+                                endereco != "" &&
+                                bairro != ""&&
+                                cep != ""
                                 )
                                 {
                                     obj.name = nome;
@@ -102,6 +102,7 @@ export default function Endereco(props){
                                     obj.placement = bairro;
                                     obj.zipCode = cep;
                                     setEntrega(obj);
+                                    setError(false);
                                 }
                             else{
                                 setError(true)
